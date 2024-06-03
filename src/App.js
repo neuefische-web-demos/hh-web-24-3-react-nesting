@@ -1,13 +1,5 @@
-import React from "react";
-import "./styles.css";
-
-function Animal({ emoji, name }) {
-  return (
-    <h2>
-      {emoji} {name}
-    </h2>
-  );
-}
+import React from 'react';
+import './styles.css';
 
 export default function App() {
   return (
@@ -19,5 +11,13 @@ export default function App() {
       <Animal emoji="🐢" name="Archibald" />
       <Animal emoji="🐣" name="Chick Norris" />
     </main>
+  );
+}
+
+function Animal({ emoji, name }) {
+  return (
+    <h2>
+      {emoji} {name}
+    </h2>
   );
 }
